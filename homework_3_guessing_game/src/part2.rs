@@ -12,7 +12,7 @@ impl Strategy for Part2 {
                 0 => return mid,
                 -1 => { max = mid - 1; },
                 1 => { min = mid + 1; },
-               // None => fix this part
+               _ => unreachable!(),
             }
         }
         min
